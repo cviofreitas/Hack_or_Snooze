@@ -1,0 +1,56 @@
+/* Login and signup forms */
+
+.account-form button {
+  width: 4rem;
+  margin-left: 80px;
+}
+
+#signup-form button {
+  width: 8rem;
+}
+
+.account-forms-container {
+  padding-left: 20px;
+}
+
+
+/* User profile */
+@keyframes dropdown {
+  from {
+    overflow: hidden;
+    height: 0;
+    /* opacity: 0; */
+  }
+}
+
+.user-profile-box {
+  animation: dropdown 1000ms;
+  height: 120px;
+  color: white;
+  text-transform: capitalize;
+  position: absolute;
+  border-radius: 30px;
+  box-shadow: 5px 6px 30px #0e31504c;
+  ;
+  right: 1vw;
+  background: linear-gradient(#0e31506a, rgba(38, 61, 87, 0.3));
+  padding: 10px 20px 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+.user-profile-box div {
+  margin: 5px;
+}
+
+
+.profile-info {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile-box>* {
+  margin: 10px 0;
+}

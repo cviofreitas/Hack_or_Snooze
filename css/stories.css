@@ -1,0 +1,95 @@
+/* Lists of stories */
+
+.stories-list {
+  margin: 20px 5px;
+}
+
+.stories-list>li {
+  color: gray;
+}
+
+#favorited-stories,
+#my-stories {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#stories-loading-msg {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px 30px;
+}
+
+.like-button {
+  z-index: 2;
+  margin-top: 5px;
+  flex-direction: row;
+  display: flex;
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+pre {
+  color: white;
+  padding-left: 10px;
+  margin: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* .like-button:hover {
+  background-color: rgb(215, 215, 215);
+} */
+
+.fa-heart:before {
+  color: white;
+  position: relative;
+  left: -40px;
+  width: 50px;
+  padding: 5px;
+  padding-left: 50px;
+  border-radius: 5px;
+  background: linear-gradient(rgba(91, 119, 155, 0.537), rgba(38, 84, 119, 0.505));
+  box-shadow: 3px 5px 30px rgba(0, 0, 0, 0.175);
+}
+
+.fa-heart:hover::before {
+  background-color: rgb(20, 92, 148);
+}
+
+
+
+/* Individual stories */
+
+.star,
+.trash-can {
+  font-size: 0.75rem;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.trash-can:hover {
+  color: crimson;
+}
+
+.story-link {
+  color: black;
+  font-size: 0.85rem;
+  font-weight: normal;
+
+}
+
+.story-link:hover {
+  text-decoration: underline;
+}
+
+.story-author {
+
+  font-size: 1.02em;
+  color: black;
+}
+
+.story-user {
+  display: block;
+}
